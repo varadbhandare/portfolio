@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>My Portfolio - Varad</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', 'Roboto', 'Open Sans', 'Lato', sans-serif;
+      background: linear-gradient(135deg, #e1bee7, #f3e5f5);
+      color: #333;
+    }
+    header {
+      background-color: #6A1B9A;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      background-color: #4a0072;
+      justify-content: center;
+      padding: 10px;
+      margin: 0;
+    }
+    nav ul li {
+      margin: 0 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 900px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1s ease;
+    }
+    h2 {
+      color: #6A1B9A;
+      text-align: center;
+    }
+    ul li {
+      margin: 8px 0;
+    }
+    .about-flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+    .about-flex img {
+      max-width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    .download-btn {
+      display: block;
+      text-align: center;
+      margin-top: 15px;
+    }
+    .download-btn a {
+      text-decoration: none;
+      background-color: #6A1B9A;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .download-btn a:hover {
+      background-color: #4A148C;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    form input,
+    form textarea,
+    form button {
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background-color: #6A1B9A;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {
+      background-color: #4A148C;
+    }
+    footer {
+      text-align: center;
+      padding: 15px 20px;
+      background-color: #4A148C;
+      color: white;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: white;
+      margin: 0 10px;
+      font-size: 22px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #ce93d8;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Varad Santoshkumar Bhandare</h1>
+    <p>3rd Year Engineering Student - Artificial Intelligence & Data Science</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#extra">Extra</a></li>
+      <li><a href="#knowledge">Knowledge</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#admin-login">Admin Login</a></li>
+    </ul>
+  </nav> 
+
+  <main>
+    <section id="about" class="section-style">
+      <h2>About Me</h2>
+      <p>I am a third-year engineering student specializing in Artificial Intelligence and Data Science, with a minor in Surveying. I am passionate about web development and programming.</p>
+      <div class="download-btn">
+        <a href="resume.pdf" download>Download Resume</a>
+      </div>
+    </section>
+
+    <section id="skills" class="section-style">
+      <h2>Skills</h2>
+      <ul>
+        <li>Python, C</li>
+        <li>HTML, CSS, JavaScript, PHP</li>
+        <li>SQL</li>
+        <li>Surveying (Total Station, GNSS)</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section-style">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Smart Dustbin with Waste Segregation</h3>
+        <p>Automated dustbin prototype using sensors and Arduino to segregate biodegradable and non-biodegradable waste.</p>
+      </div>
+      <div class="project">
+        <h3>Hospital Management System (SQL)</h3>
+        <p>Designed a hospital database with triggers, joins, stored procedures, and static hashing for efficient management.</p>
+      </div>
+      <div class="project">
+        <h3>Surveying Project using GNSS</h3>
+        <p>Executed real-time GNSS-based coordinate mapping with post-processing for terrain modeling.</p>
+      </div>
+      <div class="project">
+        <h3>Automated Car Parking System Using Sensor</h3>
+        <p>Automated car parking system using sensors and buzzer to detect the object.</p>
+      </div>
+    </section>
+
+    <section id="extra" class="section-style">
+      <h2>Extra Activity</h2>
+      <ul>
+        <li>I can organize an event in my college as a volunteer.</li>
+        <li>I have participated in college events such as BGMI and the Maths Marathon.</li>
+      </ul>  
+    </section>
+
+    <section id="knowledge" class="section-style">
+      <h2>Technical Knowledge Pie Chart</h2>
+      <canvas id="knowledgeChart" width="300" height="300" style="max-width: 400px; margin: auto;"></canvas>
+    </section>
+
+    <section id="hobbies" class="section-style">
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Playing online video games like BGMI, Valorant, Call of Duty, and Clash of Clans</li>
+        <li>Watching anime like Naruto, One Piece, Dragon Ball Z, Tokyo Revengers, etc.</li>
+      </ul>  
+    </section> 
+
+    <section id="contact" class="section-style">
+      <h2>Contact</h2>
+      <form class="form-style">
+        <p><label for="name">Name:</label>
+        <input type="text" placeholder="Enter Name"></p>
+        <p><label for="email">Email:</label>
+        <input type="email" placeholder="Enter Email"></p>
+        <p><label for="contact">Contact:</label>
+        <input type="tel" placeholder="Enter Number"></p>       
+        <button>Submit</button>
+      </form>
+    </section>
+
+  <section id="admin-login" class="section-style">
+    <h2>Admin Login</h2>
+    <form class="form-style">
+    <p><label for="name">Name:</label>
+    <input type="text" placeholder="Enter Name"></p> 
+    <p><label for="password">Password:</label>
+    <input type="password" placeholder="Enter password"></p>
+    <button>Submit</button>
+    </form>
+  </section>  
+</main> 
+
+  <footer>
+  <p>&copy; varadbhandare4@gmail.com</p>
+  <div>
+    <a href="https://www.linkedin.com/in/varad-bhandare-0036a2287" target="_blank" title="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/your-username" target="_blank" title="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://twitter.com/your-handle" target="_blank" title="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://www.instagram.com/your-instagram" target="_blank" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+</footer>
+
+
+  <script>
+    const ctx = document.getElementById('knowledgeChart').getContext('2d');
+    const knowledgeChart = new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: ['C', 'Web Development', 'Python', 'Database', 'AI tools and prompt'],
+        datasets: [{
+          data: [25, 20, 15, 20, 20],
+          backgroundColor: ['#3498db', '#2ecc71', '#e74c3c', '#f1c40f', '#9b59b6']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'bottom'
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
